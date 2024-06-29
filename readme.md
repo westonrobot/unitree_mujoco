@@ -36,17 +36,18 @@ Note:
 # Installation
 ## C++ Simulator (simulate)
 
+
 ### 1. Dependencies
 
 Make sure you've added `next` channel of the Weston Robot Debian repository.
 
 ```bash
-sudo apt update
-sudo apt install wr-dep-mujoco wr-dep-unitree-sdk2
+$ sudo apt update
+$ sudo apt install wr-dep-mujoco wr-dep-unitree-sdk2
 ```
 
 ```bash
-sudo apt install libyaml-cpp-dev libglfw3-dev
+$ sudo apt install libyaml-cpp-dev
 ```
 
 ### 2. Compile unitree_mujoco
