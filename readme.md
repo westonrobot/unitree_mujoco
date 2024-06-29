@@ -34,40 +34,20 @@ Note:
 
 # Installation
 ## C++ Simulator (simulate)
+
 ### 1. Dependencies
-#### unitree_sdk2
-It is recommended to install `unitree_sdk2` in `/opt/unitree_robotics` path.
+
+Make sure you've added `next` channel of the Weston Robot Debian repository.
+
 ```bash
-git clone https://github.com/unitreerobotics/unitree_sdk2.git
-cd unitree_sdk2/
-mkdir build
-cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=/opt/unitree_robotics
-sudo make install
+$ sudo apt update
+$ sudo apt install wr-dep-mujoco wr-dep-unitree-sdk2
 ```
-For more details, see: https://github.com/unitreerobotics/unitree_sdk2
-#### mujoco
-Current version is tested in mujoco-3.2.7
+
 ```bash
-sudo apt install libglfw3-dev libxinerama-dev libxcursor-dev libxi-dev
+$ sudo apt install libyaml-cpp-dev
 ```
-```bash
-git clone https://github.com/google-deepmind/mujoco.git
-mkdir build && cd build
-cmake ..
-make -j4
-sudo make install
-```
-Test:
-```bash
-simulate
-```
-If the mujoco simulator pops up, the installation is successful.
-#### yaml-cpp
-yaml-cpp is mainly used for reading configuration files:
-```bash
-sudo apt install libyaml-cpp-dev
-```
+
 ### 2. Compile unitree_mujoco
 ```bash
 cd unitree_mujoco/simulate
