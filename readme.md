@@ -42,12 +42,12 @@ Note:
 Make sure you've added `next` channel of the Weston Robot Debian repository.
 
 ```bash
-$ sudo apt update
-$ sudo apt install wr-dep-mujoco wr-dep-unitree-sdk2
+sudo apt update
+sudo apt install wr-dep-mujoco wr-dep-unitree-sdk2
 ```
 
 ```bash
-$ sudo apt install libyaml-cpp-dev
+sudo apt install libyaml-cpp-dev libglfw3 libglfw3-dev
 ```
 
 ### 2. Compile unitree_mujoco
