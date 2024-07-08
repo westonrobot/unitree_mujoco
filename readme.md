@@ -47,7 +47,7 @@ sudo apt install wr-dep-mujoco wr-dep-unitree-sdk2
 ```
 
 ```bash
-sudo apt install libyaml-cpp-dev libglfw3 libglfw3-dev
+sudo apt install libyaml-cpp-dev libglfw3-dev
 ```
 
 ### 2. Compile unitree_mujoco
