@@ -1,4 +1,5 @@
 # Introduction
+[中文版本](readme_zh.md)
 ## Unitree mujoco
 `unitree_mujoco` is a simulator developed based on `Unitree sdk2` and `mujoco`. Users can easily integrate the control programs developed with `Unitree_sdk2`, `unitree_ros2`, and `unitree_sdk2_python` into this simulator, enabling a seamless transition from simulation to physical development. The repository includes two versions of the simulator implemented in C++ and Python, with a structure as follows:
 ![](./doc/func.png)
@@ -40,12 +41,12 @@ Note:
 Make sure you've added `next` channel of the Weston Robot Debian repository.
 
 ```bash
-$ sudo apt update
-$ sudo apt install wr-dep-mujoco wr-dep-unitree-sdk2
+sudo apt update
+sudo apt install wr-dep-mujoco wr-dep-unitree-sdk2
 ```
 
 ```bash
-$ sudo apt install libyaml-cpp-dev
+sudo apt install libyaml-cpp-dev libglfw3 libglfw3-dev
 ```
 
 ### 2. Compile unitree_mujoco
