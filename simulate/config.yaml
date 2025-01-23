@@ -1,8 +1,8 @@
 robot: "b2"  # Robot name, "go1", "go2", "b2", "b2w", "h1"
-robot_scene: "scene_terrain.xml" # Robot scene 
+robot_scene: "empty.xml" # "scene_terrain.xml" # Robot scene 
 
 domain_id: 1  # Domain id
-interface: "lo" # Interface 
+interface: "enp5s0" # Interface 
 
 use_joystick: 0 # Simulate Unitree WirelessController using a gamepad
 joystick_type: "xbox" # support "xbox" and "switch" gamepad layout
