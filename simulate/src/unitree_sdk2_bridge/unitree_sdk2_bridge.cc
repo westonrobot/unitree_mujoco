@@ -359,6 +359,10 @@ void UnitreeSdk2Bridge::CheckSensor()
         {
             have_frame_sensor_ = true;
         }
+        if (strstr(name, "touch") != nullptr)
+        {
+            have_touch_sensor_ = true;
+        }
     }
 
     if (num_motor_ > NUM_MOTOR_IDL_GO)
