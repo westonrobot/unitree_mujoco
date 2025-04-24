@@ -221,6 +221,8 @@
             <geom pos="0.0039635 0 -0.054" type="mesh" contype="0" conaffinity="0" group="1"
               density="0" rgba="0.2 0.2 0.2 1" mesh="head_link" />
             <geom pos="0.0039635 0 -0.054" type="mesh" rgba="0.2 0.2 0.2 1" mesh="head_link" />
+            <site name="left_attach_point" pos="0.0 0.06 0.3" size="0.02" rgba="0 0.8 0 0.3"/>
+            <site name="right_attach_point" pos="0.0 -0.06 0.3" size="0.02" rgba="0 0.8 0 0.3"/>
             <geom pos="0.0039635 0 -0.054" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0"
               group="1" density="0" rgba="0.7 0.7 0.7 1" mesh="waist_support_link" />
             <geom pos="0.0039635 0 -0.054" quat="1 0 0 0" type="mesh" rgba="0.7 0.7 0.7 1"

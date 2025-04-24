@@ -1,5 +1,5 @@
-robot: "b2"  # Robot name, "go1", "go2", "b2", "b2w", "h1"
-robot_scene: "empty.xml" # "scene_terrain.xml" # Robot scene 
+robot: "g1"  # Robot name, "go1", "go2", "b2", "b2w", "h1"
+robot_scene: "debug_scene_29dof.xml" # "scene_terrain.xml" # Robot scene 
 
 domain_id: 1  # Domain id
 interface: "enp5s0" # Interface 
