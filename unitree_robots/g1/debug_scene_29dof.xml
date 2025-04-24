@@ -14,7 +14,7 @@
     <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
       markrgb="0.8 0.8 0.8" width="300" height="300"/>
     <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
-    <material name="strap" rgba="0.6 0.2 0.2 1" reflectance="0.1"/>
+    <material name="strap" rgba="0.5 0.5 0.5 1" reflectance="0.1"/>
   </asset>
 
   <worldbody>
@@ -31,26 +31,16 @@
 
   <!-- Create shoulder strap -->
   <tendon>
-    <spatial name="left_strap" limited="true" range="0.2 0.3" damping="0.5" stiffness="10000" width="0.01" rgba="0.6 0.2 0.2 1" material="strap">
+    <spatial name="left_strap" limited="true" range="0.2 0.3" damping="1.5" stiffness="10000" width="0.005" material="strap">
       <site site="strap_left"/>
       <site site="left_attach_point"/>
     </spatial>
   </tendon>
 
   <tendon>
-    <spatial name="right_strap" limited="true" range="0.2 0.3" damping="0.5" stiffness="10000" width="0.01" rgba="0.6 0.2 0.2 1" material="strap">
+    <spatial name="right_strap" limited="true" range="0.2 0.3" damping="1.5" stiffness="10000" width="0.005" material="strap">
       <site site="strap_right"/>
       <site site="right_attach_point"/>
     </spatial>
   </tendon>
-  
-  <!-- Set up lifting force with constant bias -->
-  <actuator>
-    <general name="left_strap_force" site="left_attach_point" refsite="strap_left" 
-             ctrlrange="0 100" gainprm="1000" biasprm="800" forcerange="0 1000" 
-             dynprm="0.5" dyntype="filter" gaintype="fixed"/>
-    <general name="right_strap_force" site="right_attach_point" refsite="strap_right" 
-             ctrlrange="0 100" gainprm="1000" biasprm="800" forcerange="0 1000" 
-             dynprm="0.5" dyntype="filter" gaintype="fixed"/>
-  </actuator>
 </mujoco>
