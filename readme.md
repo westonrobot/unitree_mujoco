@@ -39,7 +39,7 @@ Note:
 
 ### 1. Dependencies
 
-Make sure you've added `next` channel of the Weston Robot Debian repository.
+Make sure you've added `next` channel of the Weston Robot Debian repository. You can find detailed instructions for doing this [here](https://docs.westonrobot.com/software/installation/apt_source/).
 
 ```bash
 sudo apt update
